@@ -21,23 +21,34 @@ public class Time {
     //*** Constructors ***
     
     /*****************************************
-    * Description: brief description of the methods purpose
+    * Description: Initialized constructor. Create a time 
+    * object with minutes and seconds.
     * 
     * Interface:
     * 
-    * @param        each parameter of the method should be listed with an @param
-    * @param        parametername description of parameter
+    * @param        min: int, number of minutes
+    * @param        sec: int, number of seconds
     * 
-    * @return       any return value will be noted here
     * ****************************************/
     
         public Time(int min, int sec){
-            
-        }
-    
+            this.min = min;
+            this.sec = sec;
+        } // end Time
     
     //*** Getters ***
     
+    /*****************************************
+    * Description: return a formatted string of time
+    * 
+    * Interface:
+    * 
+    * ****************************************/
+        public String getTime(){
+            String time = (this.min + ":" + this.sec);
+            return time;
+        } // end getTime
+        
     //*** Setters ***
     
 } // end of public class
