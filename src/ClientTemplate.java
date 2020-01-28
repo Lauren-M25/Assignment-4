@@ -40,7 +40,7 @@ public class ClientTemplate {  // begin class
     
         ProgramInfo programInfo = new ProgramInfo("A4 Q1"); // create program info object
         
-        BufferedReader fin = new BufferedReader(new FileReader("demoskaterData.txt"));
+        BufferedReader fin = new BufferedReader(new FileReader("skaterData.txt"));
         PrintWriter fout = new PrintWriter(new BufferedWriter(new FileWriter("outFile.txt")));
         
         ArrayList<Skater> skaters = new ArrayList(); // create array of skaters
