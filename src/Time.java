@@ -13,8 +13,8 @@
 public class Time {
     //*** Class Variables ***
     
-        private int min = 0;
-        private int sec = 0;
+        private int min = 0; // minutes
+        private int sec = 0; // seconds
     
     //*** Instance Variables ***
     
@@ -32,8 +32,8 @@ public class Time {
     * ****************************************/
     
         public Time(int min, int sec){
-            this.min = min;
-            this.sec = sec;
+            this.min = min; // set minutes
+            this.sec = sec; // set seconds
         } // end Time
     
     //*** Getters ***
@@ -47,8 +47,13 @@ public class Time {
     * 
     * ****************************************/
         public String getTime(){
-            String time = (this.min + ":" + this.sec);
-            return time;
+            String time = ""; // declare time
+            
+            
+            time = String.format("%d%s%02d", this.min, ":", this.sec);
+            
+            
+            return time; // return time
         } // end getTime
         
     /*****************************************
@@ -60,8 +65,8 @@ public class Time {
     * 
     * ****************************************/
         public int getMin(){
-            return this.min;
-        } // end getTime
+            return this.min; // return min
+        } // end getMin
         
     /*****************************************
     * Description: return the amount of seconds
@@ -71,7 +76,7 @@ public class Time {
     * @return      sec: int, number of seconds
     * ****************************************/
         public int getSec(){
-            return this.sec;
+            return this.sec; // return sec
         } // end getSec
         
     //*** Setters ***
@@ -85,8 +90,8 @@ public class Time {
     * @param      sec: int, new amount of seconds
     * ****************************************/
         public void setTime(int min, int sec){
-            this.min = min;
-            this.sec = sec;
+            this.min = min; // set new min
+            this.sec = sec; // set new sec
         } // end setTime
         
     /*****************************************
@@ -97,7 +102,7 @@ public class Time {
     * @param      min: int, new amount of minutes
     * ****************************************/
         public void setMin(int min){
-            this.min = min;
+            this.min = min; // set new min
         } // end setMin
         
     /*****************************************
@@ -108,7 +113,7 @@ public class Time {
     * @param      sec: int, new amount of seconds
     * ****************************************/
         public void setSec(int sec){
-            this.sec = sec;
-        } // end setMin
+            this.sec = sec; // set new sec
+        } // end setSec
         
 } // end of public class
